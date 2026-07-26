@@ -1,0 +1,78 @@
+:root {
+  --pink-50: #fff5f7;
+  --pink-100: #ffe4e8;
+  --pink-200: #fecdd6;
+  --pink-300: #fda4af;
+  --pink-400: #fb7185;
+  --pink-500: #ff5277;
+  --pink-600: #e11d48;
+  --pink-accent: #ff477e;
+  
+  --gradient-main: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  --gradient-header: linear-gradient(135deg, #ff6b8b 0%, #ff8eaa 50%, #ffa5bc 100%);
+  --gradient-subtle: linear-gradient(180deg, #fff0f4 0%, #fff9fb 100%);
+  --gradient-bubble-user: linear-gradient(135deg, #ff6584 0%, #f78fb3 100%);
+  --gradient-glow: radial-gradient(circle, rgba(255, 182, 193, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+
+  --text-dark: #3a2228;
+  --text-medium: #6e4852;
+  --text-light: #9e7a84;
+  --bg-app: #fff0f3;
+
+  --shadow-pink: 0 12px 32px rgba(255, 107, 139, 0.16);
+  --shadow-soft: 0 4px 16px rgba(235, 140, 160, 0.12);
+  --shadow-float: 0 20px 40px rgba(240, 100, 130, 0.2);
+
+  --font-main: 'Quicksand', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--font-main);
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: var(--bg-app);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+body {
+  font-family: var(--font-main);
+  background: radial-gradient(circle at 10% 20%, #ffe4e8 0%, #fff0f3 90%);
+}
+
+button, input, textarea {
+  font-family: var(--font-main);
+}
+
+/* Custom Scrollbar for chat messages */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 165, 185, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 117, 140, 0.6);
+}
